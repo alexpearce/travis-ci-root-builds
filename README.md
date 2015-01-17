@@ -34,7 +34,7 @@ $ . /vagrant/create_builds.sh
 
 Each build can take a significant amount of time, upwards of 30 minutes.
 
-A tarballs for each build will be created in the `/vagrant` folder, which in a standard Vagrant install is shared with the host machine.
+A tarball for each build will be created in the `/vagrant` folder, which in a standard Vagrant install is shared with the host machine.
 
 ## Usage
 
