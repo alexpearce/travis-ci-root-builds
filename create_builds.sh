@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+shopt -s extglob
 
 # Define supported ROOT and Python versions
 ROOT_VERSIONS="5.34.19
@@ -28,8 +30,8 @@ for RV in $ROOT_VERSIONS; do
   for PV in $PYTHON_VERSIONS; do
     BUILD_DIR=ROOT-${RV}_Python-${PV}
     mkdir $BUILD_DIR
-    cp -R ${UNTAR_DIR}/root $BUILD_DIR
-    cd $BUILD_DIR/root
+    cp -R $UNTAR_DIR/root* $BUILD_DIR
+    cd $BUILD_DIR/root*
 
     # Create a virtualenv and work within it
     virtualenv -p /usr/bin/python${PV} .env
