@@ -24,10 +24,12 @@ sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 20
 sudo update-alternatives --config gcc
 sudo update-alternatives --config g++
 
-# Add deadsnakes PPA for Python 2.6
+# Add deadsnakes PPA for Python 2.6 and Python 3.3+
 sudo add-apt-repository -y ppa:fkrull/deadsnakes
 sudo apt-get -y update
 sudo apt-get -y install python2.6 python2.6-dev
+sudo apt-get -y install python3.3 python3.3-dev
+sudo apt-get -y install python3.4 python3.4-dev
 
 # Install virtualenv to manage Python environments
 sudo apt-get -y install python-virtualenv

@@ -6,7 +6,9 @@ shopt -s extglob
 ROOT_VERSIONS="5.34.25
 6.02.04"
 PYTHON_VERSIONS="2.6
-2.7"
+2.7
+3.3
+3.4"
 
 # Download all required ROOT versions, if they've not been downloaded already,
 # then extract them in to versioned folders
@@ -34,7 +36,12 @@ for RV in $ROOT_VERSIONS; do
     cd $BUILD_DIR/root*
 
     # Create a virtualenv and work within it
-    virtualenv -p /usr/bin/python${PV} .env
+    # Use native venv for Python > 2
+    if [[ $PV == 2* ]]; then
+      virtualenv -p /usr/bin/python${PV} .env
+    else
+      pyvenv-${PV} .env
+    fi
     . .env/bin/activate
 
     # Configure and compile ROOT, then install it in to /tmp
