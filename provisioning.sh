@@ -4,7 +4,8 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 # Install mandatory, and then optional, ROOT dependencies
-sudo apt-get -y install git dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
+sudo apt-get -y install git dpkg-dev make cmake g++ gcc binutils \
+  libx11-dev libxpm-dev libxft-dev libxext-dev
 sudo apt-get -y install gfortran libssl-dev libpcre3-dev \
   xlibmesa-glu-dev libglew1.5-dev libftgl-dev \
   libmysqlclient-dev libfftw3-dev cfitsio-dev \
@@ -23,6 +24,18 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 20
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 20
 sudo update-alternatives --config gcc
 sudo update-alternatives --config g++
+
+# Install a modern CMake (ROOT requires >= 2.8.8)
+curl -O http://www.cmake.org/files/v3.1/cmake-3.1.2.tar.gz
+tar xf cmake-3.1.2.tar.gz
+mkdir cmake-3.1.2/_build
+cd cmake-3.1.2/_build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+make
+sudo make install
+sudo ldconfig
+cd ../..
+rm -rf cmake-3.1.2 cmake-3.1.2.tar.gz
 
 # Add deadsnakes PPA for Python 2.6 and Python 3.3+
 sudo add-apt-repository -y ppa:fkrull/deadsnakes

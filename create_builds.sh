@@ -41,7 +41,9 @@ for RV in $ROOT_VERSIONS; do
     . .env/bin/activate
 
     # Configure and compile ROOT, then install it in to /tmp
-    ./configure --all
+    mkdir _build
+    cd _build
+    cmake .. -Dall=ON
     make
     . bin/thisroot.sh
     make DESTDIR=/tmp install
