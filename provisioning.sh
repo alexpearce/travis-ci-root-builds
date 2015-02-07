@@ -32,4 +32,9 @@ sudo apt-get -y install python3.3 python3.3-dev
 sudo apt-get -y install python3.4 python3.4-dev
 
 # Install virtualenv to manage Python environments
-sudo apt-get -y install python-virtualenv
+curl -O https://pypi.python.org/packages/source/v/virtualenv/virtualenv-12.0.5.tar.gz
+tar xzf virtualenv-12.0.5.tar.gz
+cd virtualenv-12.0.5
+sudo python setup.py install
+cd ..
+rm -rf virtualenv-12.0.5 virtualenv-12.0.5.tar.gz

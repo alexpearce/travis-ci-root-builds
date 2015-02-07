@@ -37,11 +37,7 @@ for RV in $ROOT_VERSIONS; do
 
     # Create a virtualenv and work within it
     # Use native venv for Python > 2
-    if [[ $PV == 2* ]]; then
-      virtualenv -p /usr/bin/python${PV} .env
-    else
-      pyvenv-${PV} .env
-    fi
+    virtualenv -p /usr/bin/python${PV} .env
     . .env/bin/activate
 
     # Configure and compile ROOT, then install it in to /tmp
