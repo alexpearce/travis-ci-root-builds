@@ -15,8 +15,6 @@ PYTHON_VERSIONS="2.6
 for RV in $ROOT_VERSIONS; do
   FILENAME=root_v${RV}.source.tar.gz
   UNTAR_DIR=ROOT-${RV}
-  # Take the first character of the version string as the major version
-  ROOT_MAJOR_VERSION=$(echo $RV | awk '{print substr($0,0,1)}')
 
   if [ -e $FILENAME ]; then
     echo "ROOT version $RV already downloaded, skipping"
