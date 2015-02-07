@@ -44,7 +44,7 @@ for RV in $ROOT_VERSIONS; do
     mkdir _build
     cd _build
     cmake .. -Dall=ON
-    make
+    make -j4
     . bin/thisroot.sh
     make DESTDIR=/tmp install
 

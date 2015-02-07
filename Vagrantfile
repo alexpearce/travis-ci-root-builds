@@ -18,5 +18,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Increase memory from 512MB default to 2048MB
   config.vm.provider "virtualbox" do |v|
     v.memory = 2048
+    v.cpus = 2
   end
 end
