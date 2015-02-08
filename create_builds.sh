@@ -36,7 +36,6 @@ for RV in $ROOT_VERSIONS; do
     cd $BUILD_DIR/root*
 
     # Create a virtualenv and work within it
-    # Use native venv for Python > 2
     virtualenv -p /usr/bin/python${PV} .env
     . .env/bin/activate
 
