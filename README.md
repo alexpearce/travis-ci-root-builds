@@ -47,12 +47,17 @@ See the [`test-travis-builds`](https://github.com/alexpearce/test-travis-builds)
 There are publicly available builds in my [Dropbox](https://www.dropbox.com/) public folder, but I cannot guarantee that they will always be there.
 As of the last commit date on this [README](README.md), the available builds are given in the table below.
 
+If you strongly depend on the availability of such builds, hosting them elsewhere might be a good idea.
+
+#### Python 2
+
 -            | Python 2.6                            | Python 2.7
--------------|---------------------------------------|---------------------------------------
+-------------|---------------------------------------|----------------------------------------
 ROOT 5.34.19 | [`ROOT-5.34.19_Python-2.6.tar.gz`][1] | [`ROOT-5.34.19_Python-2.7.tar.gz`][2]
 ROOT 5.34.25 | [`ROOT-5.34.25_Python-2.6.tar.gz`][5] | [`ROOT-5.34.25_Python-2.7.tar.gz`][6]
 ROOT 6.00.02 | [`ROOT-6.00.02_Python-2.6.tar.gz`][3] | [`ROOT-6.00.02_Python-2.7.tar.gz`][4]
 ROOT 6.02.04 | [`ROOT-6.02.04_Python-2.6.tar.gz`][7] | [`ROOT-6.02.04_Python-2.7.tar.gz`][8]
+ROOT 6.03.02 | [`ROOT-6.03.02_Python-2.6.tar.gz`][9] | [`ROOT-6.03.02_Python-2.7.tar.gz`][10]
 
 [1]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.19_Python-2.6.tar.gz
 [2]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.19_Python-2.7.tar.gz
@@ -62,5 +67,17 @@ ROOT 6.02.04 | [`ROOT-6.02.04_Python-2.6.tar.gz`][7] | [`ROOT-6.02.04_Python-2.7
 [6]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.25_Python-2.7.tar.gz
 [7]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.02.04_Python-2.6.tar.gz
 [8]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.02.04_Python-2.7.tar.gz
+[9]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.03.02_Python-2.6.tar.gz
+[10]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.03.02_Python-2.7.tar.gz
 
-If you strongly depend on the availability of such builds, hosting them elsewhere might be a good idea.
+#### Python 3
+
+-            | Python 3.3                             | Python 3.4
+-------------|----------------------------------------|----------------------------------------
+ROOT 5.34.25 | [`ROOT-5.34.25_Python-3.3.tar.gz`][11] | [`ROOT-5.34.25_Python-3.4.tar.gz`][12]
+ROOT 6.03.02 | [`ROOT-6.03.02_Python-3.3.tar.gz`][13] | [`ROOT-6.03.02_Python-3.4.tar.gz`][14]
+
+[11]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.25_Python-3.3.tar.gz
+[12]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.25_Python-3.4.tar.gz
+[13]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.03.02_Python-3.3.tar.gz
+[14]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.03.02_Python-3.4.tar.gz
