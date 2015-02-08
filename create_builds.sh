@@ -15,6 +15,8 @@ PYTHON_VERSIONS="2.6
 for RV in $ROOT_VERSIONS; do
   FILENAME=root_v${RV}.source.tar.gz
   UNTAR_DIR=ROOT-${RV}
+  # Take the first character of the version string as the major version
+  ROOT_MAJOR_VERSION=${RV:0:1}
 
   if [ -e $FILENAME ]; then
     echo "ROOT version $RV already downloaded, skipping"
@@ -52,6 +54,16 @@ for RV in $ROOT_VERSIONS; do
     # Create the archive for distribution and move it to /vagrant
     # This is accessible from the host machine
     cd /tmp/home/vagrant
+    # ROOT 5 and 6 have different installation structures, we
+    # normalise them to make use with Travis consistent
+    if [ "$ROOT_MAJOR_VERSION" == "5" ]; then
+      mv $BUILD_DIR/root/_build/root $BUILD_DIR/root2
+      rm -rf $BUILD_DIR/root
+      mv $BUILD_DIR/root2 $BUILD_DIR/root
+    else
+      mv $BUILD_DIR/root-*/_build $BUILD_DIR/root
+      rm -rf $BUILD_DIR/root-*
+    fi
     tar czf ${BUILD_DIR}.tar.gz $BUILD_DIR
     mv ${BUILD_DIR}.tar.gz /vagrant
 
@@ -60,6 +72,7 @@ for RV in $ROOT_VERSIONS; do
     unset BUILD_DIR
   done
 
+  unset ROOT_MAJOR_VERSION
   unset UNTAR_DIR
   unset FILENAME
 done
