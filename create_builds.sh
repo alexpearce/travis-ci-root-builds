@@ -42,7 +42,7 @@ for RV in $ROOT_VERSIONS; do
     # Configure and compile ROOT, then install it in to /tmp
     mkdir _build
     cd _build
-    cmake .. -Dall=ON
+    cmake .. -Dcxx11=ON -Droofit=ON -Dtmva=ON -Dpython=ON
     make -j4
     . bin/thisroot.sh
     make DESTDIR=/tmp install
