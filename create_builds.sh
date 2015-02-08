@@ -4,7 +4,7 @@ shopt -s extglob
 
 # Define supported ROOT and Python versions
 ROOT_VERSIONS="5.34.25
-6.02.04"
+6.03.02"
 PYTHON_VERSIONS="2.6
 2.7
 3.3
