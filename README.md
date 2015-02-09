@@ -44,10 +44,9 @@ See the [`test-travis-builds`](https://github.com/alexpearce/test-travis-builds)
 
 ### Availability
 
-There are publicly available builds in my [Dropbox](https://www.dropbox.com/) public folder, but I cannot guarantee that they will always be there.
-As of the last commit date on this [README](README.md), the available builds are given in the table below.
+There are publicly available builds on [Sourceforge](https://sourceforge.net/projects/travis-ci-root-builds/files/), but if you strongly depend on the availability of such builds, hosting them elsewhere might be a good idea.
 
-If you strongly depend on the availability of such builds, hosting them elsewhere might be a good idea.
+As of the last commit date on this [README](README.md), the available builds are given in the table below.
 
 #### Python 2
 
@@ -59,16 +58,16 @@ ROOT 6.00.02 | [`ROOT-6.00.02_Python-2.6.tar.gz`][3] | [`ROOT-6.00.02_Python-2.7
 ROOT 6.02.04 | [`ROOT-6.02.04_Python-2.6.tar.gz`][7] | [`ROOT-6.02.04_Python-2.7.tar.gz`][8]
 ROOT 6.03.02 | [`ROOT-6.03.02_Python-2.6.tar.gz`][9] | [`ROOT-6.03.02_Python-2.7.tar.gz`][10]
 
-[1]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.19_Python-2.6.tar.gz
-[2]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.19_Python-2.7.tar.gz
-[3]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.00.02_Python-2.6.tar.gz
-[4]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.00.02_Python-2.7.tar.gz
-[5]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.25_Python-2.6.tar.gz
-[6]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.25_Python-2.7.tar.gz
-[7]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.02.04_Python-2.6.tar.gz
-[8]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.02.04_Python-2.7.tar.gz
-[9]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.03.02_Python-2.6.tar.gz
-[10]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.03.02_Python-2.7.tar.gz
+[1]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-5.34.19_Python-2.6.tar.gz
+[2]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-5.34.19_Python-2.7.tar.gz
+[3]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-6.00.02_Python-2.6.tar.gz
+[4]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-6.00.02_Python-2.7.tar.gz
+[5]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-5.34.25_Python-2.6.tar.gz
+[6]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-5.34.25_Python-2.7.tar.gz
+[7]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-6.02.04_Python-2.6.tar.gz
+[8]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-6.02.04_Python-2.7.tar.gz
+[9]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-6.03.02_Python-2.6.tar.gz
+[10]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-6.03.02_Python-2.7.tar.gz
 
 #### Python 3
 
@@ -77,7 +76,7 @@ ROOT 6.03.02 | [`ROOT-6.03.02_Python-2.6.tar.gz`][9] | [`ROOT-6.03.02_Python-2.7
 ROOT 5.34.25 | [`ROOT-5.34.25_Python-3.3.tar.gz`][11] | [`ROOT-5.34.25_Python-3.4.tar.gz`][12]
 ROOT 6.03.02 | [`ROOT-6.03.02_Python-3.3.tar.gz`][13] | [`ROOT-6.03.02_Python-3.4.tar.gz`][14]
 
-[11]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.25_Python-3.3.tar.gz
-[12]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-5.34.25_Python-3.4.tar.gz
-[13]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.03.02_Python-3.3.tar.gz
-[14]: https://dl.dropboxusercontent.com/u/37461/travis-ci-root-builds/ROOT-6.03.02_Python-3.4.tar.gz
+[11]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-5.34.25_Python-3.3.tar.gz
+[12]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-5.34.25_Python-3.4.tar.gz
+[13]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-6.03.02_Python-3.3.tar.gz
+[14]: http://downloads.sourceforge.net/project/travis-ci-root-builds/ROOT-6.03.02_Python-3.4.tar.gz
